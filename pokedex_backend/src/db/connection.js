@@ -6,5 +6,9 @@ const config = {
     password: 'abc123',
     database: 'pokemondb',
     port: 3306,
-    connectionLimit:10,
+    connectionlimit: 10,
 }
+
+const pool = mariadb.createPool(config);
+
+module.exports = pool;
